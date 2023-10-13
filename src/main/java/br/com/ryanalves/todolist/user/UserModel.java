@@ -12,7 +12,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity(name="tb_users")
+@Entity(name = "tb_users")
 public class UserModel {
 
   @Id
@@ -21,7 +21,7 @@ public class UserModel {
 
   @Column(unique = true, name = "usuario")
   private String username;
-  @Column(name = "nome") 
+  @Column(name = "nome")
   private String name;
   @Column(name = "senha")
   private String password;
@@ -29,5 +29,5 @@ public class UserModel {
   @CreationTimestamp
   private LocalDateTime createdAt;
 
-  //getters or setters
+  // getters or setters
 }
